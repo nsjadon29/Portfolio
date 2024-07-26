@@ -1,0 +1,33 @@
+/* Typewriter.css */
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 50%; }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  }
+  
+  .typewriter h2 {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+      typewriter 1s steps(12) 1s 1 normal both,
+      blink-caret .75s step-end infinite;
+  }
+  
+  .typewriter p {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+      typewriter 6s steps(100) 4.5s 1 normal both,
+      blink-caret .75s step-end infinite;
+  }
